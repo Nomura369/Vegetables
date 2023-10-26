@@ -1,0 +1,62 @@
+html {
+    background-color: #EDF2C5;
+    box-sizing: border-box; /*預設是cotent-box*/
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Noto Sans;
+}
+
+.container {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title {
+    font-size: 2.75em;
+    font-weight: 900;
+    line-height: normal;
+    color: #778A50;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.header-buttons-left {
+    border-right: 1px solid #778A50; /*直線加在這*/
+    margin-right: -3px; /*呃可以這樣用嗎？*/
+    /*margin-top: 5px;*/ /*對齊用*/
+}
+
+.header-buttons-left-items {
+    padding-right: 12px;
+}
+
+.header-buttons-right {
+    display: flex;
+}
+
+.header-buttons-right-items {
+    color: #778A50;
+    border: 1px solid #778A50;
+    border-radius: 3px;
+    padding: 4px 8px;
+    margin-left: 14px;
+}
+
+.navbar {
+    
+}

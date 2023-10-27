@@ -23,7 +23,7 @@ html {
 }
 
 body {
-    
+    font-size: 100%; /*雖然不知道有沒有必要，但還是寫一下*/
 }
 
 .container {
@@ -36,6 +36,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 36px;
 }
 
 .header-title {
@@ -43,28 +44,29 @@ body {
     font-size: 2.75em;
     line-height: normal;
     color: #778A50;
+    margin: 0;
 }
 
-.header-buttons {
+.header-button {
     display: flex;
     align-items: center;
 }
 
-.header-buttons-left {
+.header-button-left {
     border-right: 1px solid #778A50; /*直線加在這*/
     margin-right: -3px; /*呃可以這樣用嗎？*/
     margin-top: 5px; /*對齊用*/
 }
 
-.header-buttons-left-items {
+.header-button-left-item {
     padding-right: 12px;
 }
 
-.header-buttons-right {
+.header-button-right {
     display: flex;
 }
 
-.header-buttons-right-items {
+.header-button-right-item {
     color: #778A50;
     font-family: NotoSans-Bold;
     font-size: 0.875em;
@@ -76,9 +78,33 @@ body {
 }
 
 .nav {
-    
+    margin-top: 10px;
 }
 
 .nav-list {
+    background-color: #778A50;
+    list-style: none;
+    display: flex;
     
+    border-top: 1px solid #778A50;
+    border-bottom: 1px solid #778A50;
+    border-radius: 3px;
+    
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list-item {
+    margin-left: 30px;
+    margin-right: 34px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+.nav-list-item-link {
+    text-decoration: none; /*去除字型設定，如畫底線與粗體等*/
+    color: #EDF2C5;
+    font-family: NotoSans-Black;
+    font-size: 1em;
+    line-height: 1.5;
 }

@@ -27,7 +27,7 @@ body {
 }
 
 .container {
-    max-width: 1120px;
+    width: 1120px; /*如果設 max-width，縮放時格式會怪怪的*/
     margin-left: auto;
     margin-right: auto;
 }
@@ -107,4 +107,98 @@ body {
     font-family: NotoSans-Black;
     font-size: 1em;
     line-height: 1.5;
+}
+
+.main {
+
+}
+
+.main-image {
+    display: block; /*圖片預設為inline元件，周遭可能會有一個謎之間距*/
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content-vegetables {
+    margin-right: 64px;
+}
+
+.main-content-vegetables-title {
+    color: #EDF2C5;
+    font-family: NotoSans-Black;
+    font-size: 1em;
+    line-height: 1.5;
+    
+    background-color: #778A50;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 30px;
+    border-top: 1px solid #778A50;
+    border-bottom: 1px solid #778A50;
+    border-radius: 3px;
+
+    margin: 0 0 16px 0;
+}
+
+.main-content-vegetables-image {
+    display: flex;
+    justify-content: start;
+}
+
+.main-content-vegetables-image-item {
+    display: block;
+    margin-right: 16px;
+}
+
+#image-end {
+    margin-right: 0;  /*消掉最邊邊多餘的間距*/ 
+}
+
+.main-content-contact {
+
+}
+
+.main-content-contact-title { /*跟旁邊的蔬菜欄位格式一樣*/
+    color: #EDF2C5;
+    font-family: NotoSans-Black;
+    font-size: 1em;
+    line-height: 1.5;
+    
+    background-color: #778A50;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 30px;
+    border-top: 1px solid #778A50;
+    border-bottom: 1px solid #778A50;
+    border-radius: 3px;
+
+    margin: 0 0 16px 0;
+}
+
+.main-content-contact-words {
+    font-family: NotoSans-Regular;
+    font-size: 0.75em;
+    line-height: 1.5;
+    color: #7D7D7D;
+
+    background-color: #F7FBDA;
+
+    padding: 16px 16px 16px 16px;
+}
+
+.main-content-contact-words-up {
+    padding-bottom: 9px;
+    border-bottom: 1px solid #7D7D7D;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.main-content-contact-words-down {
+    margin-top: 9px;
+    margin-bottom: 0;
 }

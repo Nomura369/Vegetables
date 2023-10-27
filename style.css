@@ -23,10 +23,15 @@ html {
 }
 
 body {
-    font-size: 100%; /*雖然不知道有沒有必要，但還是寫一下*/
+    font-size: 100%; /*不知道有沒有必要，但還是寫一下*/
 }
 
 .container {
+    /*用來固定footer位置*/
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /*滿版的高度*/
+    
     width: 1120px; /*如果設 max-width，縮放時格式會怪怪的*/
     margin-left: auto;
     margin-right: auto;
@@ -110,7 +115,7 @@ body {
 }
 
 .main {
-
+    
 }
 
 .main-image {
@@ -201,4 +206,24 @@ body {
 .main-content-contact-words-down {
     margin-top: 9px;
     margin-bottom: 0;
+}
+
+.footer {
+    background-color: #778A50;
+    display: flex;
+    justify-content: center;
+
+    border-top: 1px solid #778A50;
+    border-bottom: 1px solid #778A50;
+    border-radius: 3px;
+
+    margin-top: 117px;
+}
+
+.footer-content {
+    font-family: NotoSans-Regular;
+    font-size: 0.75em;
+    line-height: 1.5;
+    color: #EDF2C5;
+    margin: 21px 0;
 }

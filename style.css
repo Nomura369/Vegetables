@@ -48,8 +48,12 @@ body {
     font-family: NotoSans-Black;
     font-size: 2.75em;
     line-height: normal;
-    color: #778A50;
     margin: 0;
+}
+
+.header-title-link {
+    color: #778A50;
+    text-decoration: none;
 }
 
 .header-button {
@@ -63,7 +67,11 @@ body {
     margin-top: 5px; /*對齊用*/
 }
 
-.header-button-left-item {
+.header-button-left-link {
+    text-decoration: none;
+}
+
+.header-button-left-link-item {
     padding-right: 12px;
 }
 
@@ -72,14 +80,24 @@ body {
 }
 
 .header-button-right-item {
-    color: #778A50;
     font-family: NotoSans-Bold;
     font-size: 0.875em;
     line-height: normal;
+    padding: 0;
+    margin: 0 0 0 14px;
+}
+
+.header-button-right-item-link {
+    color: #778A50;
+    padding: 4px 8px;
     border: 1px solid #778A50;
     border-radius: 3px;
-    padding: 4px 8px;
-    margin-left: 14px;
+    text-decoration: none;
+}
+
+.header-button-right-item-link:hover {
+    background-color: #778A50;
+    color: #EDF2C5;
 }
 
 .nav {
@@ -114,6 +132,10 @@ body {
     line-height: 1.5;
 }
 
+.nav-list-item-link:hover {
+    color: white;
+}
+
 .main {
     
 }
@@ -134,7 +156,6 @@ body {
 }
 
 .main-content-vegetables-title {
-    color: #EDF2C5;
     font-family: NotoSans-Black;
     font-size: 1em;
     line-height: 1.5;
@@ -149,6 +170,17 @@ body {
 
     margin: 0 0 16px 0;
 }
+
+
+.main-content-vegetables-title-link {
+    color: #EDF2C5;
+    text-decoration: none;
+}
+
+.main-content-vegetables-title-link:hover {
+    color: white;
+}
+
 
 .main-content-vegetables-image {
     display: flex;
@@ -169,7 +201,6 @@ body {
 }
 
 .main-content-contact-title { /*跟旁邊的蔬菜欄位格式一樣*/
-    color: #EDF2C5;
     font-family: NotoSans-Black;
     font-size: 1em;
     line-height: 1.5;
@@ -183,6 +214,15 @@ body {
     border-radius: 3px;
 
     margin: 0 0 16px 0;
+}
+
+.main-content-contact-title-link {
+    color: #EDF2C5;
+    text-decoration: none;
+}
+
+.main-content-contact-title-link:hover {
+    color: white;
 }
 
 .main-content-contact-words {

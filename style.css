@@ -31,7 +31,10 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh; /*滿版的高度*/
-    
+}
+
+.notfooter {
+    flex-grow: 1; /*可佔滿垂直剩餘的空間*/
     width: 1120px; /*如果設 max-width，縮放時格式會怪怪的*/
     margin-left: auto;
     margin-right: auto;
@@ -252,7 +255,7 @@ body {
     background-color: #778A50;
     display: flex;
     justify-content: center;
-
+    
     border-top: 1px solid #778A50;
     border-bottom: 1px solid #778A50;
     border-radius: 3px;

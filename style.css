@@ -35,6 +35,7 @@ body {
 
 .notfooter {
     flex-grow: 1; /*可佔滿垂直剩餘的空間*/
+    
     width: 1120px; /*如果設 max-width，縮放時格式會怪怪的*/
     margin-left: auto;
     margin-right: auto;
